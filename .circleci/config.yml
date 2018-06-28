@@ -1,5 +1,5 @@
 image_config: &image_config
-  IMAGE_NAME: KaTeX-fonts
+  IMAGE_NAME: katexfonts
   IMAGE_TAG: 1.0
 
 version: 2
@@ -23,7 +23,7 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/KaTeX-fonts:1.0
+      - image: $DOCKER_USERNAME/katexfonts:1.0
         environment:
           <<: *image_config
 

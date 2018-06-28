@@ -54,7 +54,6 @@ workflows:
   dockerfile_wizard:
     jobs:
       - build:
-
       - test_image:
           requires:
             - build
